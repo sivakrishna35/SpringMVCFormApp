@@ -1,4 +1,4 @@
-com\mouri\model\HelloWorld.class
 com\mouri\config\AppConfig.class
+com\mouri\model\HelloWorldCls.class
 com\mouri\controller\SpringController.class
 com\mouri\config\SpringMVCFrontController.class

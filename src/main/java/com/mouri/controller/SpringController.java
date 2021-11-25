@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.mouri.model.HelloWorld;
+import com.mouri.model.HelloWorldCls;
 
 @Controller 
 public class SpringController {
@@ -31,11 +31,11 @@ public class SpringController {
 	
 	@RequestMapping("/helloworld")
 	public ModelAndView handler(HttpServletRequest req, HttpServletResponse res) {
-		HelloWorld helloWorld = new HelloWorld();
+		HelloWorldCls helloWorld = new HelloWorldCls();
 		helloWorld.setMessage("HelloWorld example");
 		helloWorld.setDateTime(LocalDateTime.now().toString());
 		System.out.println("this is from handler().");
-		
+		System.out.println("second modification.");
 		ModelAndView model = new ModelAndView("helloworld");
 		model.addObject("helloWorld", helloWorld);
 		
