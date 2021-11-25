@@ -35,7 +35,7 @@ public class SpringController {
 		helloWorld.setMessage("HelloWorld example");
 		helloWorld.setDateTime(LocalDateTime.now().toString());
 		System.out.println("this is from handler().");
-		System.out.println("second modification.");
+		
 		ModelAndView model = new ModelAndView("helloworld");
 		model.addObject("helloWorld", helloWorld);
 		
